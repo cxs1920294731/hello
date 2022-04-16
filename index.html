@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    你好
+    <div id="app">
+        <h2 :title='title'>
+            {{title}}
+        </h2>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:"#app",
+            data() {
+                return {
+                    title: "hello,vue"
+                }
+            },
+        })
+    </script>
 </body>
 </html>
